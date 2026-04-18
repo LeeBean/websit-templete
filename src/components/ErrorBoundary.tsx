@@ -1,7 +1,8 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { Result, Button } from 'antd';
+import { withTranslation, WithTranslation } from 'react-i18next';
 
-interface Props {
+interface Props extends WithTranslation {
   children?: ReactNode;
 }
 
@@ -23,16 +24,18 @@ class ErrorBoundary extends Component<Props, State> {
   }
 
   public render() {
+    const { t } = this.props;
+
     if (this.state.hasError) {
       return (
         <div className="h-screen flex items-center justify-center bg-gray-50">
           <Result
             status="500"
-            title="500"
-            subTitle="抱歉，系统出现了点小问题。"
+            title={t('errorBoundary.title')}
+            subTitle={t('errorBoundary.subTitle')}
             extra={
               <Button type="primary" onClick={() => window.location.href = '/'}>
-                返回首页
+                {t('errorBoundary.backHome')}
               </Button>
             }
           />
@@ -44,4 +47,4 @@ class ErrorBoundary extends Component<Props, State> {
   }
 }
 
-export default ErrorBoundary;
+export default withTranslation()(ErrorBoundary);

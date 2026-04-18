@@ -181,10 +181,10 @@ const AuthModal: React.FC = () => {
       <Form.Item
         name="agreement"
         valuePropName="checked"
-        rules={[{ validator: (_, value) => value ? Promise.resolve() : Promise.reject(new Error('请阅读并同意用户协议')) }]}
+        rules={[{ validator: (_, value) => value ? Promise.resolve() : Promise.reject(new Error(t('auth.agreementError') || '请阅读并同意用户协议')) }]}
       >
         <Checkbox className="text-xs">
-          {t('auth.agreementPrefix')} <Button type="link" size="small" className="p-0 text-xs">{t('auth.serviceAgreement')}</Button> {t('common.and')} <Button type="link" size="small" className="p-0 text-xs">{t('auth.privacyPolicy')}</Button>
+          {t('auth.agreementPrefix')} <a href="/service-agreement" target="_blank" className="text-primary hover:underline">{t('auth.serviceAgreement')}</a> {t('common.and')} <a href="/privacy-policy" target="_blank" className="text-primary hover:underline">{t('auth.privacyPolicy')}</a>
         </Checkbox>
       </Form.Item>
       <Button 

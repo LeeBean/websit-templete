@@ -13,6 +13,8 @@ const ProductDetail = lazy(() => import('@/pages/Mall/ProductDetail'));
 const Join = lazy(() => import('@/pages/Join/index'));
 const Complaint = lazy(() => import('@/pages/Complaint/index'));
 const Profile = lazy(() => import('@/pages/Profile/index'));
+const PrivacyPolicy = lazy(() => import('@/pages/PrivacyPolicy/index'));
+const ServiceAgreement = lazy(() => import('@/pages/ServiceAgreement/index'));
 
 // Loading component
 const PageLoading = () => (
@@ -57,7 +59,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'consultation',
+        path: 'consultation/*',
         element: (
           <ProtectedRoute>
             <Suspense fallback={<PageLoading />}>
@@ -103,6 +105,22 @@ const router = createBrowserRouter([
               <Complaint />
             </Suspense>
           </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'privacy-policy',
+        element: (
+          <Suspense fallback={<PageLoading />}>
+            <PrivacyPolicy />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'service-agreement',
+        element: (
+          <Suspense fallback={<PageLoading />}>
+            <ServiceAgreement />
+          </Suspense>
         ),
       },
       {

@@ -1,0 +1,67 @@
+{
+  "header": {
+    "home": "Home",
+    "repair": "After-sales",
+    "consultation": "Consultation",
+    "mall": "Mall",
+    "join": "Join Us",
+    "complaint": "Complaints",
+    "search": "Search...",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "personalCenter": "Profile"
+  },
+  "common": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "search": "Search",
+    "reset": "Reset",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "and": "and"
+  },
+  "footer": {
+    "company": "About Us",
+    "contact": "Contact Us",
+    "links": "Links",
+    "icp": "© 2026 After-sales. ICP 12345678"
+  },
+  "auth": {
+    "loginTitle": "Welcome Back",
+    "loginDesc": "Please login with your phone or email",
+    "usernamePlaceholder": "Phone / Email",
+    "passwordPlaceholder": "Please enter password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "noAccount": "Don't have an account?",
+    "registerNow": "Register now",
+    "registerTitle": "Create Account",
+    "registerDesc": "Join us for professional services",
+    "phonePlaceholder": "Phone number",
+    "codePlaceholder": "Verification code",
+    "getCode": "Get Code",
+    "passwordSetPlaceholder": "Set password",
+    "passwordConfirmPlaceholder": "Confirm password",
+    "agreementPrefix": "I have read and agree to",
+    "serviceAgreement": "User Service Agreement",
+    "privacyPolicy": "Privacy Policy",
+    "agreementError": "Please read and agree to the agreement",
+    "alreadyHaveAccount": "Already have an account?",
+    "goLogin": "Login",
+    "resetPasswordTitle": "Reset Password",
+    "newPasswordPlaceholder": "New password",
+    "resetPasswordBtn": "Reset Password",
+    "backToLogin": "Back to Login",
+    "loginSuccess": "Login success",
+    "registerSuccess": "Register success, please login",
+    "resetSuccess": "Password reset success, please login"
+  },
+  "errorBoundary": {
+    "title": "500",
+    "subTitle": "Sorry, something went wrong with the system.",
+    "backHome": "Back to Home"
+  }
+}
